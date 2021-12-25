@@ -2,7 +2,14 @@
 
 This is a repo where I learn flask-sqlalchemy from the [official docs](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
 
-## Setup
+## Table of Contents
+1. [Setup](#setup)
+2. [Quick Start](#quick-start)
+    1. [Initializing a database](#init)
+    2. [Creating users, inserting and querying](#create-insert-query)
+3. [Simple Relationships](#simple-relations)
+
+## Setup <a name="setup"></a>
 
 Here I'm setting up a virtual env to install flask-sqlalchemy module
 
@@ -25,9 +32,9 @@ Terminal - **bash** (commands differ for cmd)
     - flask-2.0.2
     - flask-sqlalchemy-2.5.1
 
-## Quick start
+## Quick start <a name="quick-start"></a>
 
-### Initializing a database
+### Initializing a database <a name="init"></a>
 
 To create the initial database, just import the db object from an interactive Python shell and run the SQLAlchemy.create_all() method to create the tables and database:
 
@@ -36,7 +43,7 @@ To create the initial database, just import the db object from an interactive Py
 >>> db.create_all()
 ```
 
-### Creating users, inserting and querying
+### Creating users, inserting and querying <a name="create-insert-query"></a>
 
 The table defined in app.py is:
 
@@ -72,7 +79,7 @@ class User(db.Model):
 <User u'admin'>
 ```
 
-## Simple Relationships
+## Simple Relationships <a name="simple-relations"></a>
 
 ![Table schema](./assets/table_schema.png)
 
